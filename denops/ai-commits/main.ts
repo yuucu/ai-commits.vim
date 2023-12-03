@@ -35,7 +35,7 @@ async function runGitCommand(args: string[]): Promise<string> {
   if (code !== 0) {
     const errorOutput = new TextDecoder().decode(stderr);
     console.error(errorOutput);
-    throw new Error(`Git diff failed: ${errorOutput}`);
+    throw new Error(`Git command failed: ${errorOutput}`);
   }
   return new TextDecoder().decode(stdout);
 }
