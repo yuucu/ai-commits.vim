@@ -1,6 +1,6 @@
 # ai-commits.vim
 
-TODO
+![vim-ai demo](./demo.gif)
 
 ## Features
 
