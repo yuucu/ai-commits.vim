@@ -52,7 +52,7 @@ export async function main(denops: Denops): Promise<void> {
         const commitMessage = await sendChatMessage(gitDiffResult);
         const shouldCommit = await denops.call(
           "input",
-          `Commit this? / message: ${commitMessage}) [y/n]: `
+          `Commit this? / message: ${commitMessage} | [y/n]: `
         );
         if (shouldCommit.toLowerCase() === "y") {
           await runGitCommand(["add", "."]);
