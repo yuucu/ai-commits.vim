@@ -21,7 +21,6 @@ const promptTemplate = new PromptTemplate({
 
 async function sendChatMessage(text: string) {
   const prompt = await promptTemplate.format({ input: text, locale: "ja" });
-  console.log(prompt);
   const commitMessage = await llm.call(prompt);
   return commitMessage;
 }
