@@ -8,8 +8,8 @@ const llm = new OpenAIChat({});
 const promptTemplate = new PromptTemplate({
   inputVariables: ["input", "locale"],
   template: `
-以下の指定された仕様を元に、明瞭で簡潔なgit commitメッセージを生成します。
-不必要な翻訳や余計な情報は除外して、gitコミットに直接使える形で提供します。
+以下の指定された仕様を元に、diffの内容を簡潔なgit commitメッセージを生成してください。
+不必要な翻訳や余計な情報は除外して、gitコミットに直接使える形で提供してください。
 
 ### Message Language
 {locale}
