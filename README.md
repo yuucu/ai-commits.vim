@@ -1,10 +1,12 @@
 # ai-commits.vim
 
+This plugin enables AI to automatically generate commit messages and execute git commit for you.
+
 ![vim-ai demo](./demo.gif)
 
 ## Features
 
-TODO
+- Generate AI Commit Messages
 
 ## Installation
 
@@ -29,10 +31,9 @@ export OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
   }
 ```
 
-
 ## Usage
 
 ```
-" Automatic commit by ai
+" Automatic commit by AI
 :AICommits
 ```
